@@ -1,4 +1,5 @@
 import { WeatherForm } from "@/components/weather-form";
+import { WeatherLookup } from "@/components/weatherlookup";
 
 export default function Home() {
   return (
@@ -28,7 +29,10 @@ export default function Home() {
             <div className="border-2 border-dashed border-muted-foreground/25 rounded-lg p-8">
               <div className="text-muted-foreground">
                 <h3 className="text-lg font-medium mb-2">
-                  TODO: Implement Data Lookup
+                  <div className="flex flex-col items-center justify-start">
+                    <h2 className="text-2xl font-semibold mb-4">Lookup Weather Data</h2>
+                    <WeatherLookup />
+                  </div>
                 </h3>
                 <p className="text-sm">
                   This section should allow users to enter an ID and retrieve
